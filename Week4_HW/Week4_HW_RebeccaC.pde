@@ -1,5 +1,8 @@
-//Create a sketch that makes use of transformations to create repetitive, 
-//harmonic motion. Try to incorporate what we learned about color theory.
+/*
+Week 4 Assignment
+Rebecca C
+Square on screen changes color, scale, and rotation based off of mouse's x coordinates.
+*/
 
 //color datatype
 color c;
