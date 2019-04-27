@@ -1,0 +1,114 @@
+[
+{
+"category": "Animals",
+"type": "boolean",
+"difficulty": "easy",
+"question": "The Axolotl is an amphibian that can spend its whole life in a larval state.",
+"correct_answer": "True",
+"incorrect_answers": [
+"False"
+]
+},
+{
+"category": "Entertainment: Film",
+"type": "boolean",
+"difficulty": "easy",
+"question": "Han Solo&#039;s co-pilot and best friend, &quot;Chewbacca&quot;, is an Ewok.",
+"correct_answer": "False",
+"incorrect_answers": [
+"True"
+]
+},
+{
+"category": "Science & Nature",
+"type": "multiple",
+"difficulty": "easy",
+"question": "What is the hottest planet in the Solar System?",
+"correct_answer": "Venus",
+"incorrect_answers": [
+"Mars",
+"Mercury",
+"Jupiter"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "easy",
+"question": "What is the default alias that Princess Garnet goes by in Final Fantasy IX?",
+"correct_answer": "Dagger",
+"incorrect_answers": [
+"Dirk",
+"Garnet",
+"Quina"
+]
+},
+{
+"category": "Entertainment: Musicals & Theatres",
+"type": "multiple",
+"difficulty": "medium",
+"question": "What play is the quote &quot;Hell is other people&quot; from?",
+"correct_answer": "No Exit",
+"incorrect_answers": [
+"The Devil and the Good Lord",
+"The Condemned of Altona",
+"The Flies"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "boolean",
+"difficulty": "easy",
+"question": "In RuneScape, one must complete the &quot;Dragon Slayer&quot; quest before equipping Rune Platelegs.",
+"correct_answer": "False",
+"incorrect_answers": [
+"True"
+]
+},
+{
+"category": "Entertainment: Comics",
+"type": "multiple",
+"difficulty": "medium",
+"question": "In the comics, which Sonic character took command of the Dark Legion after Luger&#039;s assassination?",
+"correct_answer": "Lien-Da",
+"incorrect_answers": [
+"Kragok",
+"Dimitri",
+"Remington"
+]
+},
+{
+"category": "General Knowledge",
+"type": "multiple",
+"difficulty": "medium",
+"question": "When did the website &quot;Facebook&quot; launch?",
+"correct_answer": "2004",
+"incorrect_answers": [
+"2005",
+"2003",
+"2006"
+]
+},
+{
+"category": "Entertainment: Board Games",
+"type": "multiple",
+"difficulty": "hard",
+"question": "What was the development code name for the &quot;Urza&#039;s Destiny&quot; expansion for &quot;Magic: The Gathering&quot;, released in 1999?",
+"correct_answer": "Chimichanga",
+"incorrect_answers": [
+"Burrito",
+"Taquito",
+"Enchilada"
+]
+},
+{
+"category": "Entertainment: Video Games",
+"type": "multiple",
+"difficulty": "easy",
+"question": "In the Halo series, which era of SPARTAN is Master Chief? ",
+"correct_answer": "SPARTAN-II",
+"incorrect_answers": [
+"SPARTAN-I",
+"SPARTAN-III",
+""
+]
