@@ -2,13 +2,14 @@
 //used specifically for flocking system "it's kinda like a bird. droid, but boid"
 
 //flocking requires SEPARATION, ALIGNMENT, COHESION 
+var img;
 
 class Boid{
     constructor(){
         //createVector([x], [y], [z])
         var xPos = (width-150) + floor(random()*150);
         var yPos =  (height-150) + floor(random()*150);
-        this.position = createVector(xPos, yPos); //position in middle of screen for now
+        this.position = createVector(xPos, yPos);
         this.velocity = p5.Vector.random2D();
         
         //create random velocities for each boid
@@ -55,7 +56,7 @@ class Boid{
     //aligning in same direction as boids in that perception radius
     align(boids){
         //sets the "local" area of alignment affect
-        let perceptionRadius = 70;
+        let perceptionRadius = 100;
         //not the average velocity, but the velocity you want it to align to
         let desired = createVector();
         //i believe this is the total #of boids being affected within a perception radius 
@@ -125,7 +126,7 @@ class Boid{
 
     //staying in the same perception radius area as other boids (grp together)
     cohesion(boids){
-        let perceptionRadius = 70; //same as alignment
+        let perceptionRadius = 60; //same as alignment
         //should probably change "desired" to "steering"
         let desired = createVector();
         let total = 0;
@@ -175,9 +176,9 @@ class Boid{
     }
 
     show(){
-        strokeWeight(8);
+        strokeWeight(12);
         colorMode(HSB, 100, 100, 100);
-        stroke(10, 70, 100);
-        point(this.position.x, this.position.y);
+        stroke(65, 50, 100);
+        triangle(this.position.x, this.position.y, this.position.x -2, this.position.y +4, this.position.x +2, this.position.y +4);
     }
 }

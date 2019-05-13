@@ -1,3 +1,5 @@
+//make look nice, change background, change boids
+
 const flock = [];
 
 //flow field vector scale to pixels
@@ -13,6 +15,8 @@ var longMax = -106.084;
 var latMin = 20.042;
 var latMax = 44.983;
 
+var img;
+
 //Coordinates stored here
 //#region 
 
@@ -24,15 +28,12 @@ var flowfield;
 
 function setup(){
     createCanvas(700, 700);
+    img = loadImage('whale.png');
 
-    img = loadImage('california.PNG');
     //creating rows & columns for the flow field according to scale
     colm = floor(width/scl);
     rows = floor(height/scl);
     flowfield = new Array(colm + rows);
-
-      
-    strokeWeight(3);
 
     //draw vectors
     var yoff = 0; //y offset
@@ -101,14 +102,32 @@ function setup(){
    //coordinates.length
    
     //creates multiple boids
-    for(let i = 0; i < 150; i++){ 
+    for(let i = 0; i < 70; i++){ 
         flock.push(new Boid(-1,-1));
     }
 }
 
 function draw(){
-   background(150);
-   image(img,0,0);
+   background(20);
+
+   //making outline of california
+   fill(30);
+   strokeWeight(3);
+   stroke(70);
+   beginShape();
+   vertex( 150, -100);
+   vertex( 210, 0);
+   vertex( 300, 200);
+   vertex( 360, 250);
+   vertex( 450, 400);
+   vertex( 550, 520);
+   vertex( 580, 540);
+   vertex( 450, 330);
+   vertex( 440, 265);
+   vertex( 650, 470);
+   vertex( 700, 500);
+   vertex( 700, 0);
+   endShape(CLOSE);
    
 
     for(let boid of flock){
